@@ -29,3 +29,19 @@ Content-Type: application/json
 
 ### Delete a Todo
 DELETE {{baseUrl}}/api/v1/todos/1
+
+
+### Test 1
+GET {{baseUrl}}/api/v1/todos?window=900
+
+
+### Create a Todo 2
+POST {{baseUrl}}/api/v1/todos
+Content-Type: application/json
+
+{
+    "title": "Wwozer",
+    "description": "This is a test todo",
+    "completed": false,
+    "deadline_at": "2025-03-16T12:12:12"
+}
